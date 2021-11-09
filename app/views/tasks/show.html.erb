@@ -1,3 +1,17 @@
-<h1><%= @task.title %></h1>
-<p><%= @task.details %></p>
-<%= link_to 'Go back to the tasks', tasks_path %>
+<div class="countainer" style="width:60%; text-align: justify; margin: 0 auto; margin-top: 50px;">
+  <h1 style=""><%= @task.title %></h1>
+  <div class="border-bottom rounded bg-dark text-white" style="
+    width: 60%;
+    margin-top: 20px;
+    padding: 20px 10px;
+
+    margin: 20px 0px;">
+    <p style="margin-bottom: 0px;"><%= @task.details %></p>
+  </div>
+  <p>
+  <%= link_to 'Go back to list 📜', tasks_path %>
+  </p>
+  <p>
+    <%= link_to 'Update task 💱', edit_task_path(@task) %>
+  </p>
+</div>
